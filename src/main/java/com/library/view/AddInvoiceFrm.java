@@ -87,7 +87,7 @@ public class AddInvoiceFrm extends JFrame {
         saveBtn.addActionListener(addInvoiceController);
         cancelBtn = new JButton("Cancel");
         cancelBtn.addActionListener(addInvoiceController);
-        
+
         // add component to window
         JPanel centerPanel = new JPanel(new GridLayout(3, 1, 10, 10));
 

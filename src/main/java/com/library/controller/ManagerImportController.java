@@ -54,7 +54,6 @@ public class ManagerImportController implements ActionListener {
                     if ((boolean) ivTbl.getValueAt(i, 0)) {
                         Integer ivID = (Integer) ivTbl.getValueAt(i, 1);
                         invoiceIDs.add(ivID);
-
                     }
                 }
 
@@ -71,6 +70,10 @@ public class ManagerImportController implements ActionListener {
                     invoiceDAO = new InvoiceDAO();
                     manageImportFrm.reloadInvoiceTbl(invoiceDAO.getAllInvoices());
                 }
+                // } else {
+                // JOptionPane.showMessageDialog(manageImportFrm, "The Invoices you selected
+                // have not existed yet!");
+                // }
                 break;
 
             default:
